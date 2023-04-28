@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game v.2</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="overlay start">
+      <div class="overlay-content">
+        <button id="start-btn" class="overlay-btn">Start Game</button>
+      </div>
+    </div>
+    <div class="overlay win hide">
+      <div class="overlay-content">
+        <span class="win-message">You Win!</span>
+        <span class="win-message">🎉🎉🎉</span>
+        <!-- <button id="restart-btn" class="overlay-btn">Restart Game</button> -->
+      </div>
+    </div>
+    <div class="game">
+      <div class="game-info">
+        <div class="greeting">
+          <span>Hello:</span>
+          <span id="player-name"></span>
+        </div>
+        <div class="wrong-tries">
+          <span>Wrong Tries:</span>
+          <span id="wrong-tries-count"></span>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="row">
+          <div class="card" data-cardLabel="0">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/angular.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="0">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/angular.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="1">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/css3.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="1">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/css3.png" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card" data-cardLabel="2">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/github.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="2">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/github.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="3">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/gulpjs.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="3">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/gulpjs.png" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card" data-cardLabel="4">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/html5.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="4">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/html5.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="5">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/jest.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="5">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/jest.png" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card" data-cardLabel="6">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/python.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="6">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/python.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="7">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/vuejs.png" />
+            </div>
+          </div>
+          <div class="card" data-cardLabel="7">
+            <div class="face front"></div>
+            <div class="face back">
+              <img src="./images/vuejs.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="confetti">
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+      <div class="confetti-piece"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
